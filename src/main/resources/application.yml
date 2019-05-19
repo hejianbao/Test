@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/he
+    username: root
+    password: 123456
+    driver-class-name:  com.mysql.jdbc.Driver
+mybatis:
+ #对应的实体类 也可以不用写
+  type-aliases-package: com.example.spring.demo.Entity
+  mapper-locations: classpath:/Mapper/*.xml   #主要是扫描对应的mapper.xml 文件
+
+
